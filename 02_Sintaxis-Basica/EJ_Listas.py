@@ -16,8 +16,8 @@ def invertirLista(list):
     newList = []
     listRange = len(list)
     for i in range(len(list)):     
-        newList.insert(i, list[listRange - 1])
-        #list[listRange] = newList[i]
+        #newList.insert(i, list[listRange - 1])
+        newList.append(list[listRange - 1])
         listRange = listRange - 1
 
     print("Lista al reves", newList)
