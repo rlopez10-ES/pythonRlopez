@@ -5,7 +5,12 @@ def barajaCreate():
     figuras = ('♥', '♦', '♣', '♠')
     cartas = ('As', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K')
 
-    barajaFrancesa = [(figura, carta) for figura in figuras for carta in cartas]
+    barajaFrancesa = []
+    for figura in figuras:
+        for carta in cartas:
+            barajaFrancesa.append((figura, carta))
+
+   #barajaFrancesa = [(figura, carta) for figura in figuras for carta in cartas]
     return barajaFrancesa
 
 baraja = barajaCreate()
