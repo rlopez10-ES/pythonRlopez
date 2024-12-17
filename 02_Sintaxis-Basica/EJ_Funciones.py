@@ -27,10 +27,12 @@ print(higherNum(num1, num2, num3))
 
 
 def higherNum2(numeros):
-    max_vle = nums[0]
-    for i in range(len(nums)):
-        if numeros[i] > max_vle:
-            max_vle = numeros[i]
+    max_vle = numeros[0]
+    
+    for i in numeros:
+        if i > max_vle:
+            max_vle = i
+
     return max_vle
 
 print(higherNum2(nums))

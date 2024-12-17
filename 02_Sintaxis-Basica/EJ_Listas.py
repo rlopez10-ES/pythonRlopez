@@ -3,8 +3,8 @@ numeros = [2, 5, 4, 6, 3, 6, 4, 24, 76, -100]
 
 def sumaLista(list):
     suma = 0
-    for i in range(len(list)):
-        suma = suma + list[i]
+    for i in list: 
+        suma = suma + i
 
     return suma
 
